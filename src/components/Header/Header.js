@@ -32,7 +32,7 @@ function Header({ Element, list }) {
       <div className="flex items-center gap-5">
         <div>
           <Link
-            to={`${process.env.REACT_APP_URL}/${Element}s`}
+            to={`${process.env.REACT_APP_API_URL}/${Element}s`}
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center bg-emerald-950 text-emerald-400 border border-emerald-400 border-b-4 font-medium overflow-hidden relative px-4 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
