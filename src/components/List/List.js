@@ -93,23 +93,24 @@ function List({ prod, Prod, Prods, Pr }) {
             prod.map((item) => (
               <li
                 key={item.id}
-                className=" flex justify-start gap-20 py-5  hover:bg-slate-200 ">
+                className=" flex justify-start gap-20 py-5  hover:bg-slate-200 "
+              >
                 <Link to={`/${Prods}/Edit${Pr}/${item.id}`}>
                   <div className="mx-5 flex gap-8 min-w-0 overflow-auto">
                     <div className="overflow-auto flex gap-8">
                       <img
                         className="object-cover h-[200px] w-[200px] flex-none rounded-lg bg-gray-50"
-                        src={`${process.env.REACT_APP_API_URL}${item.photo}`}
+                        src={`${item.photo}`}
                         alt=""
                       />
                       <img
                         className="h-[200px] w-[200px] flex-none rounded-lg bg-gray-50"
-                        src={`${process.env.REACT_APP_API_URL}${item.photo2}`}
+                        src={`${item.photo2}`}
                         alt=""
                       />
                       <img
                         className="h-[200px] w-[200px] flex-none rounded-lg bg-gray-50"
-                        src={`${process.env.REACT_APP_API_URL}${item.photo3}`}
+                        src={`${item.photo3}`}
                         alt=""
                       />
                     </div>
@@ -193,7 +194,8 @@ function List({ prod, Prod, Prods, Pr }) {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -206,7 +208,8 @@ function List({ prod, Prod, Prods, Pr }) {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -219,7 +222,8 @@ function List({ prod, Prod, Prods, Pr }) {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-xl font-semibold leading-6 text-gray-900">
+                          className="text-xl font-semibold leading-6 text-gray-900"
+                        >
                           Success!!
                         </Dialog.Title>
                         <div className="mt-2">
@@ -235,7 +239,8 @@ function List({ prod, Prod, Prods, Pr }) {
                       onClick={() => {
                         setPublico(false);
                       }}
-                      className="flex items-center bg-green-950 text-green-400 border border-green-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                      className="flex items-center bg-green-950 text-green-400 border border-green-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
+                    >
                       <span className="bg-green-400 shadow-green-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                       Ok
                     </button>
@@ -256,7 +261,8 @@ function List({ prod, Prod, Prods, Pr }) {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -269,7 +275,8 @@ function List({ prod, Prod, Prods, Pr }) {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -282,7 +289,8 @@ function List({ prod, Prod, Prods, Pr }) {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900">
+                          className="text-base font-semibold leading-6 text-gray-900"
+                        >
                           Success!!
                         </Dialog.Title>
                         <div className="mt-2">
@@ -301,7 +309,8 @@ function List({ prod, Prod, Prods, Pr }) {
                       onClick={() => {
                         setPrivado(false);
                       }}
-                      className="ml-5 inline-flex items-center bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                      className="ml-5 inline-flex items-center bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
+                    >
                       <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                       Ok
                     </button>
@@ -322,7 +331,8 @@ function List({ prod, Prod, Prods, Pr }) {
             enterTo="opacity-100"
             leave="ease-in duration-200"
             leaveFrom="opacity-100"
-            leaveTo="opacity-0">
+            leaveTo="opacity-0"
+          >
             <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
           </Transition.Child>
 
@@ -335,7 +345,8 @@ function List({ prod, Prod, Prods, Pr }) {
                 enterTo="opacity-100 translate-y-0 sm:scale-100"
                 leave="ease-in duration-200"
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+                leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+              >
                 <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
                   <div className="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
                     <div className="">
@@ -348,7 +359,8 @@ function List({ prod, Prod, Prods, Pr }) {
                       <div className="mt-3 text-center ">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900">
+                          className="text-base font-semibold leading-6 text-gray-900"
+                        >
                           Fail
                         </Dialog.Title>
                         <div className="mt-2">
@@ -362,7 +374,8 @@ function List({ prod, Prod, Prods, Pr }) {
                   <div className="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
                     <button
                       onClick={() => setFail(false)}
-                      className="ml-5 inline-flex items-center bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group">
+                      className="ml-5 inline-flex items-center bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-2 py-1 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
+                    >
                       <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
                       Ok
                     </button>
