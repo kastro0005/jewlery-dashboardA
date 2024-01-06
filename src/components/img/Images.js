@@ -2,16 +2,16 @@
 
 //Alert: NotFount.jpg
 export const NotFound =
-  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/53b09658-d450-4a24-0e58-be8c2e32e200/public";
+  "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/cda775eb-f3c9-44ab-03c7-c695c59dc300/public";
 
 //Dashboard: Dash.jpg
 export const ImgDash =
-  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/85834a14-4dee-4027-87c6-bc7fc8f5a400/public";
+  "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/f68feca8-2922-4e1f-506d-c64d53237000/public";
 
 //Login: Home_img.jpg
 export const HomeImg =
-  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/c63ddd4e-be57-43d7-0371-5c2d11979d00/public";
+  "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/1a3c9eb6-f1ea-4c8e-51ec-09b314318d00/public";
 
 //Logo: logo.png
 export const Logo =
-  "https://imagedelivery.net/a5TfjzZDPNM57yn2-rwdsg/929d78f1-691d-428b-632f-d8368c743500/public";
+  "https://imagedelivery.net/540mrzyEHV4mRwLar4H0Vw/bc4ec7ab-b03d-459a-de56-11c2ed593b00/public";
